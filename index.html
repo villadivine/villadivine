@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
-        /* Ibi bituma amafoto agenda neza */
         .image-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -27,13 +26,9 @@
         .image-gallery img:hover {
             transform: scale(1.03);
         }
-        
-        /* Ibi bituma iyo ukanda buto, igenda buhoro buhoro (Smooth Scroll) */
         html {
             scroll-behavior: smooth;
         }
-        
-        /* Ibi bituma buto zisa n'izikandwa */
         .feature-box {
             cursor: pointer;
             text-decoration: none;
@@ -60,24 +55,17 @@
         <h2>Fresh Accommodation & Travel 🌿</h2>
         <p>Escape the busy city and relax in our clean, modern rooms. At Villa Divine, we don't just offer a place to sleep—we offer a complete travel experience, including guided tours to the beautiful Kadahokwa Dam.</p>
         
-        <!-- BUTO ZIFITE AMALINK (Kanda urebe ifoto) -->
+        <!-- BUTO ZIFITE AMALINK -->
         <div class="features">
-            <!-- Iyi buto ijyana ku ifoto ya Kitchen (id="kitchen") -->
             <a href="#kitchen" class="feature-box">Modern Kitchenettes 🍳</a>
-            
-            <!-- Iyi buto ijyana ku ifoto ya Hot shower (id="bathroom") -->
             <a href="#bathroom" class="feature-box">Hot Showers 24/7 🚿</a>
-            
-            <!-- Iyi buto ijyana ku ifoto y'icyumba (id="bedroom") -->
             <a href="#bedroom" class="feature-box">Spacious Bedrooms 🛏️</a>
-            
-            <!-- Iyi buto ijyana ku ifoto y'ahantu ho hanze (id="environment") -->
             <a href="#environment" class="feature-box">Peaceful Environment 🌳</a>
         </div>
 
-        <!-- AHANTU HO AMAFOTO (Amafoto afite "id" kugira ngo buto ziyasange) -->
+        <!-- AHANTU HO AMAFOTO -->
         
-        <!-- Ifoto y'Icyumba -->
+        <!-- Ifoto z'Ibyumba -->
         <h3 id="bedroom" style="margin-top: 40px;">Spacious Bedrooms 🛏️</h3>
         <div class="image-gallery">
             <img src="room.jpg.jpeg" alt="Villa Divine Bedroom">
@@ -88,14 +76,14 @@
         <!-- Ifoto y'Igikoni -->
         <h3 id="kitchen" style="margin-top: 40px;">Modern Kitchenettes 🍳</h3>
         <div class="image-gallery">
+            <!-- Hano nashyize ifoto ya saloon nk'urugero. Niba ufite iy'igikoni nyayo, hindura "saloon.jpg.jpeg" uyishyiremo -->
             <img src="saloon.jpg.jpeg" alt="Villa Divine Kitchen"> 
-            <!-- Niba hari ifoto y'igikoni nyayo, hindura "saloon.jpg.jpeg" uyishyiremo -->
         </div>
 
         <!-- Ifoto y'Ubwiherero -->
         <h3 id="bathroom" style="margin-top: 40px;">Hot Showers 24/7 🚿</h3>
         <div class="image-gallery">
-            <!-- Niba hari ifoto y'ubwiherero, hindura "gate.jpg.jpeg" uyishyiremo -->
+            <!-- Hano nashyize ifoto ya gate nk'urugero. Niba ufite iy'ubwiherero nyayo, hindura "gate.jpg.jpeg" uyishyiremo -->
             <img src="gate.jpg.jpeg" alt="Villa Divine Bathroom"> 
         </div>
 
