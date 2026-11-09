@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- Iyi CSS iri hano ituma amafoto n'ifomu bisa neza -->
     <style>
-        /* Imiterere y'amafoto */
         .image-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -28,13 +26,9 @@
         .image-gallery img:hover {
             transform: scale(1.03);
         }
-        
-        /* Smooth scroll iyo ukanda kuri buto */
         html {
             scroll-behavior: smooth;
         }
-        
-        /* Uburyo buto zisa n'izikandwa */
         .feature-box {
             cursor: pointer;
             text-decoration: none;
@@ -44,8 +38,6 @@
         .feature-box:hover {
             background-color: #d1d8e0;
         }
-
-        /* Imiterere y'ifomu yo kohereza ubutumwa */
         .contact-section {
             background-color: #f1f2f6;
             padding: 30px;
@@ -74,20 +66,17 @@
 </head>
 <body>
 
-    <!-- Hejuru (Header) -->
     <header>
         <h1>Welcome to Villa Divine 🏨</h1>
         <p>Your perfect destination for fresh accommodation and unforgettable travel experiences in Rwanda.</p>
         <p style="font-size: 1em; margin-top: 10px; color: #f1c40f;">Murakaza neza kuri Villa Divine!</p>
     </header>
 
-    <!-- Igice cy'ibanze (Main Content) -->
     <div class="container">
         
         <h2>Fresh Accommodation & Travel 🌿</h2>
         <p>Escape the busy city and relax in our clean, modern rooms. At Villa Divine, we don't just offer a place to sleep—we offer a complete, peaceful travel experience in Rwanda.</p>
         
-        <!-- BUTO ZIFITE AMALINK (Zikujyana kuri za foto) -->
         <div class="features">
             <a href="#kitchen" class="feature-box">Modern Kitchenettes 🍳</a>
             <a href="#bathroom" class="feature-box">Hot Showers 24/7 🚿</a>
@@ -95,9 +84,7 @@
             <a href="#environment" class="feature-box">Peaceful Environment 🌳</a>
         </div>
 
-        <!-- AHANTU HO AMAFOTO -->
-        
-        <!-- Ifoto z'Ibyumba -->
+        <!-- Ibyumba -->
         <h3 id="bedroom" style="margin-top: 40px;">Spacious Bedrooms 🛏️</h3>
         <div class="image-gallery">
             <img src="room.jpg.jpeg" alt="Villa Divine Bedroom">
@@ -105,7 +92,7 @@
             <img src="room3.jpg.jpeg" alt="Villa Divine Bedroom 3">
         </div>
 
-        <!-- Ifoto y'Igikoni (Zahinduwe nshya) -->
+        <!-- Igikoni -->
         <h3 id="kitchen" style="margin-top: 40px;">Modern Kitchenettes 🍳</h3>
         <div class="image-gallery">
             <img src="kitchen1.jpg" alt="Villa Divine Modern Kitchen 1">
@@ -114,13 +101,15 @@
             <img src="kitchen4.jpg" alt="Villa Divine Modern Kitchen 4">
         </div>
 
-        <!-- Ifoto y'Ubwiherero (Urahindura izina ry'ifoto niba ufite iyayo) -->
+        <!-- Ubwiherero (Shower) - AMAFOTO 3 -->
         <h3 id="bathroom" style="margin-top: 40px;">Hot Showers 24/7 🚿</h3>
         <div class="image-gallery">
-            <img src="gate.jpg.jpeg" alt="Villa Divine Bathroom"> 
+            <img src="shower1.jpg" alt="Villa Divine Hot Shower 1"> 
+            <img src="shower2.jpg" alt="Villa Divine Hot Shower 2"> 
+            <img src="shower3.jpg" alt="Villa Divine Hot Shower 3"> 
         </div>
 
-        <!-- Ifoto y'Aho Hanze -->
+        <!-- Aho hanze -->
         <h3 id="environment" style="margin-top: 40px;">Peaceful Environment 🌳</h3>
         <div class="image-gallery">
             <img src="gate.jpg.jpeg" alt="Villa Divine Gate">
@@ -129,12 +118,11 @@
 
         <br>
 
-        <!-- Igice cyo Gusiga Ubutumwa (Comments / Contact Form) -->
+        <!-- Fomu yo kohereza ubutumwa -->
         <div class="contact-section">
             <h3>Leave a Comment or Ask a Question 💬</h3>
             <p>We would love to hear from you! Let us know your thoughts or ask about our rooms.</p>
             
-            <!-- Iyi ni Fomu ikoresha URL ya Formspree yawe -->
             <form class="contact-form" action="https://formspree.io/f/maeegkwa" method="POST">
                 <label for="name" style="font-weight: bold;">Your Name (Izina ryawe):</label>
                 <input type="text" id="name" name="name" required placeholder="Andika izina yawe hano...">
@@ -151,7 +139,7 @@
 
         <br><br>
 
-        <!-- Buto zo Kuduhamagara (WhatsApp & Instagram) -->
+        <!-- WhatsApp na Instagram -->
         <div style="text-align: center;">
             <h3>Contact Us & Book Now! 📲</h3>
             <p>We are ready to host you. Reach out to us today!</p>
@@ -165,7 +153,6 @@
 
     </div>
 
-    <!-- Umurongo wo hasi (Footer) -->
     <footer>
         <p>&copy; 2026 Villa Divine. All rights reserved.</p>
         <p>Fresh Accommodation & Travel in Rwanda.</p>
