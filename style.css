@@ -86,3 +86,23 @@ header p {
 .btn:hover {
     background-color: #2ecc71; /* Lighter green on hover */
 }
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.image-gallery img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.insta-btn {
+    background-color: #E1306C !important;
+}
+.contact-section {
+    background-color: #f1f2f6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
