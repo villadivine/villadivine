@@ -6,6 +6,28 @@
     <title>Villa Divine | Accommodation & Travel</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Iyi CSS iri hano ni yo ituma amafoto agenda neza nta kwiga style.css gusa -->
+    <style>
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* Ibi bituma amafoto yose agira ubunini bungana */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.03); /* Iyo umuntu ayageraho, ifoto yiyongera gato */
+        }
+    </style>
 </head>
 <body>
 
@@ -30,12 +52,14 @@
             <div class="feature-box">Peaceful Environment 🌳</div>
         </div>
 
-        <!-- AHANTU HO GUSHYIRA AMAFOTO -->
+        <!-- AHANTU HO AMAFOTO (Yahinduwe ahure n'amazina ya GitHub) -->
         <div class="image-gallery">
-            <!-- Ifoto ya 1: Icyumba -->
-            <img src="room.jpg" alt="Villa Divine Bedroom">
-            <!-- Ifoto ya 2: Igikoni -->
-            <img src="kitchen.jpg" alt="Villa Divine Kitchen">
+            <img src="room.jpg.jpeg" alt="Villa Divine Bedroom">
+            <img src="saloon.jpg.jpeg" alt="Villa Divine Saloon">
+            <img src="room2.jpg.jpeg" alt="Villa Divine Bedroom 2">
+            <img src="room3.jpg.jpeg" alt="Villa Divine Bedroom 3">
+            <img src="gate.jpg.jpeg" alt="Villa Divine Gate">
+            <img src="ladder.jpg.jpeg" alt="Villa Divine View">
         </div>
 
         <br>
