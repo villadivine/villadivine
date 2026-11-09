@@ -1,0 +1,88 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #1a252f; /* Dark blue/grey */
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #f1c40f; /* Gold/Yellow accent */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #dcdde1;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.container p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Features List */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.feature-box {
+    background-color: #ecf0f1;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #27ae60; /* Green */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2ecc71; /* Lighter green on hover */
+}
