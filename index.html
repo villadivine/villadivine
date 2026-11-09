@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     
+    <!-- Iyi CSS iri hano ituma amafoto n'ifomu bisa neza -->
     <style>
+        /* Imiterere y'amafoto */
         .image-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 15px;
-            margin-top: 30px;
+            margin-top: 20px;
             margin-bottom: 30px;
         }
         .image-gallery img {
@@ -26,9 +28,13 @@
         .image-gallery img:hover {
             transform: scale(1.03);
         }
+        
+        /* Smooth scroll iyo ukanda kuri buto */
         html {
             scroll-behavior: smooth;
         }
+        
+        /* Uburyo buto zisa n'izikandwa */
         .feature-box {
             cursor: pointer;
             text-decoration: none;
@@ -37,6 +43,32 @@
         }
         .feature-box:hover {
             background-color: #d1d8e0;
+        }
+
+        /* Imiterere y'ifomu yo kohereza ubutumwa */
+        .contact-section {
+            background-color: #f1f2f6;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .contact-form {
+            text-align: left; 
+            max-width: 500px; 
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+            font-family: inherit;
         }
     </style>
 </head>
@@ -55,7 +87,7 @@
         <h2>Fresh Accommodation & Travel 🌿</h2>
         <p>Escape the busy city and relax in our clean, modern rooms. At Villa Divine, we don't just offer a place to sleep—we offer a complete travel experience, including guided tours to the beautiful Kadahokwa Dam.</p>
         
-        <!-- BUTO ZIFITE AMALINK -->
+        <!-- BUTO ZIFITE AMALINK (Zikujyana kuri za foto) -->
         <div class="features">
             <a href="#kitchen" class="feature-box">Modern Kitchenettes 🍳</a>
             <a href="#bathroom" class="feature-box">Hot Showers 24/7 🚿</a>
@@ -76,14 +108,12 @@
         <!-- Ifoto y'Igikoni -->
         <h3 id="kitchen" style="margin-top: 40px;">Modern Kitchenettes 🍳</h3>
         <div class="image-gallery">
-            <!-- Hano nashyize ifoto ya saloon nk'urugero. Niba ufite iy'igikoni nyayo, hindura "saloon.jpg.jpeg" uyishyiremo -->
             <img src="saloon.jpg.jpeg" alt="Villa Divine Kitchen"> 
         </div>
 
         <!-- Ifoto y'Ubwiherero -->
         <h3 id="bathroom" style="margin-top: 40px;">Hot Showers 24/7 🚿</h3>
         <div class="image-gallery">
-            <!-- Hano nashyize ifoto ya gate nk'urugero. Niba ufite iy'ubwiherero nyayo, hindura "gate.jpg.jpeg" uyishyiremo -->
             <img src="gate.jpg.jpeg" alt="Villa Divine Bathroom"> 
         </div>
 
@@ -96,8 +126,30 @@
 
         <br>
 
-        <!-- Buto zo Kuduhamagara -->
+        <!-- Igice cyo Gusiga Ubutumwa (Comments / Contact Form) -->
         <div class="contact-section">
+            <h3>Leave a Comment or Ask a Question 💬</h3>
+            <p>We would love to hear from you! Let us know your thoughts or ask about our rooms.</p>
+            
+            <!-- Iyi ni Fomu ikoresha URL ya Formspree yawe -->
+            <form class="contact-form" action="https://formspree.io/f/maeegkwa" method="POST">
+                <label for="name" style="font-weight: bold;">Your Name (Izina ryawe):</label>
+                <input type="text" id="name" name="name" required placeholder="Andika izina yawe hano...">
+
+                <label for="email" style="font-weight: bold;">Your Email (Imeri yawe):</label>
+                <input type="email" id="email" name="email" required placeholder="Andika imeri yawe hano...">
+
+                <label for="message" style="font-weight: bold;">Your Message / Comment (Ubutumwa):</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Andika ubutumwa cyangwa igitekerezo cyawe hano..."></textarea>
+
+                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Send Message 🚀</button>
+            </form>
+        </div>
+
+        <br><br>
+
+        <!-- Buto zo Kuduhamagara (WhatsApp & Instagram) -->
+        <div style="text-align: center;">
             <h3>Contact Us & Book Now! 📲</h3>
             <p>We are ready to host you. Reach out to us today!</p>
             
@@ -105,7 +157,7 @@
             
             <br><br>
             
-            <a href="https://instagram.com/villa_divine_travel_acco" target="_blank" class="btn insta-btn">Follow us on Instagram 📸</a>
+            <a href="https://instagram.com/villa_divine_travel_acco" target="_blank" class="btn insta-btn" style="background-color: #E1306C; color: white;">Follow us on Instagram 📸</a>
         </div>
 
     </div>
